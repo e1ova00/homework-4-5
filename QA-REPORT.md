@@ -110,3 +110,9 @@ After the user updated the GitHub connection, the installation appeared with acc
 The app now has contents/actions/workflows write permissions, but no Pages or administration permission. Pages source configuration therefore requires the owner to choose GitHub Actions once at https://github.com/e1ova00/homework-4-5/settings/pages. A manual Pages workflow run was started after upload. Its final deployment status will be recorded after verification.
 
 The complete ZIP was also uploaded to Filebin with the user's separate, explicit consent. The server-reported SHA256 matched the local ZIP, and a ranged HTTPS GET returned the ZIP signature PK\x03\x04. That initial temporary download expires on 2026-11-18. A GitHub release asset is being prepared for a persistent download.
+
+## GitHub Actions deployment blocker
+
+The owner selected GitHub Actions as the Pages source (confirmed by the provided settings screenshot). Workflow run https://github.com/e1ova00/homework-4-5/actions/runs/43001188737 failed before any build steps started. GitHub's annotation states: **The job was not started because your account is locked due to a billing issue.** This is an account-level Actions restriction, not an npm/build failure. Local builds and the clean ZIP-extraction build remain successful. The owner must resolve the billing lock with GitHub before this workflow can deploy Pages; no live Pages site is claimed.
+
+The repository is public and source upload is complete. A release named Student Edition 2026 is being created with the verified ZIP for a persistent GitHub download, in addition to the already verified temporary Filebin link.
