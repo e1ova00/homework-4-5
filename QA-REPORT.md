@@ -141,3 +141,13 @@ Deployment source commit: 2e62d626e653d47fc593b81da2e121752be7734b
 Hosted runtime files are byte-for-byte copies of the previously tested production output. Three unused music WAV masters (over 25 MiB each) were omitted only from this hosting copy; source code uses the original MP3s, which are included. All original models, textures, physics WASM, sounds used at runtime, UI, license and student notice are preserved. Full original masters remain in GitHub and the complete ZIP.
 
 Native publication success verifies hosting; no new browser test was performed on Sites because managed browser-control tools were unavailable. Earlier actual production/mobile integration checks apply to the same app build. GitHub Pages is still separate and subject to its account restriction; the live URL above does not depend on GitHub Actions.
+
+## Final successful GitHub Pages deployment
+
+The owner encountered a Cloudflare security block on chatgpt.site despite native Sites deployment success/public access. That earlier success did not establish accessibility from the owner's mobile network.
+
+Further inspection found native Pages run 43002414367 had successfully built gh-pages but failed deployment due to a simultaneous older main deployment (HTTP 400 in-progress deployment conflict). After the old deployment completed, `gh run rerun 43002414367 --failed` succeeded. The initial billing errors belonged to the separate custom npm-build workflow, not this successful native branch-based run.
+
+**Verified live URL:** https://e1ova00.github.io/homework-4-5/index.html
+Native run: https://github.com/e1ova00/homework-4-5/actions/runs/43002414367 (success on retry).
+HTTP GET checks: root 200, production HTML 200, assets/index-CQmi1xrF.js 200, vehicle/default.glb 200, assets/rapier_wasm3d_bg-bb0TTxsO.wasm 200. Downloaded HTML SHA256 matches the validated local production HTML exactly. The served page is the real game with its module script and student modal, not the previously cached Jekyll README. A new full browser gameplay test on GitHub hosting was not performed.

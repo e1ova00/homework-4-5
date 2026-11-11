@@ -55,11 +55,11 @@ Original touch movement, two-finger camera gestures and gamepad controls are unc
 
 Student repository: https://github.com/e1ova00/homework-4-5
 
-**Live public site:** https://nadya-folio-student-2026.considerateant2.chatgpt.site
+**Live public site (verified GitHub Pages):** https://e1ova00.github.io/homework-4-5/index.html
 
-The same production build is published on Sites independently of GitHub Actions. Original MP3 music and all runtime assets are retained; three unused WAV source masters remain in GitHub and the full ZIP rather than the hosting upload.
+An additional copy was published on Sites, but the owner encountered a chatgpt.site security block there; GitHub Pages is the primary verified URL. Original MP3 music and all runtime assets are retained; three unused WAV source masters remain in GitHub and the full ZIP rather than the hosting upload.
 
-A ready production build is also published on the `gh-pages` branch, with `index.html` at its root and `.nojekyll`. For branch-based hosting, choose Settings → Pages → Deploy from a branch → `gh-pages` → `/ (root)`. The `main` root contains sources, not the production entry page. GitHub currently reports an account billing lock for Actions; a working Pages deployment has not yet been verified.
+A ready production build is also published on the `gh-pages` branch, with `index.html` at its root and `.nojekyll`. For branch-based hosting, choose Settings → Pages → Deploy from a branch → `gh-pages` → `/ (root)`. The `main` root contains sources, not the production entry page. The native branch-based Pages deployment has now succeeded. The separate npm-build workflow still reports an account billing restriction, but the ready gh-pages build is live.
 
 
 `.github/workflows/pages.yml` builds and deploys `dist/` on pushes to `main`. In repository Settings → Pages choose **GitHub Actions** as the source. The upstream Vite configuration already uses `base: './'`, compatible with a repository Pages URL. No custom router or asset substitution is used.
