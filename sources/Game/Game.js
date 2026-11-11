@@ -38,6 +38,7 @@ import { ClosingManager } from './ClosingManager.js'
 import { RayCursor } from './RayCursor.js'
 import { Water } from './Water.js'
 import { Reveal } from './Reveal.js'
+import { StudentAchievement } from './StudentAchievement.js'
 import { KonamiCode } from './KonamiCode.js'
 import { Achievements } from './Achievements.js'
 import { Notifications } from './Notifications.js'
@@ -190,6 +191,7 @@ export class Game
         this.player = new Player()
         this.closingManager = new ClosingManager()
         this.interactivePoints = new InteractivePoints()
+        this.studentAchievement = new StudentAchievement(this)
         this.konamiCode = new KonamiCode()
         this.achievements = new Achievements()
         this.tornado = new Tornado()

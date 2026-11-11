@@ -25,6 +25,15 @@ export class KonamiCode
 
         const callback = (event) =>
         {
+            if(this.game.studentAchievement.blocksInput(event))
+            {
+                index = 0
+                return
+            }
+
+            if(event.repeat)
+                return
+
             const sequenceItem = sequence[index]
 
             if(sequenceItem.indexOf(event.code) !== -1)
