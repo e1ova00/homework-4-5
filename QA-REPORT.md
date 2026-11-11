@@ -102,3 +102,11 @@ The user created and supplied `https://github.com/e1ova00/homework-4-5.git`. Git
 ### Access check for homework-4-5
 
 GitHub metadata reports the account's admin/push permission, but the connected integration cannot exercise repository writes: HTTPS git push returned 403 Permission denied, the connector Contents API returned 403 Resource not accessible by integration, and POST /repos/e1ova00/homework-4-5/pages also returned 403. The accessible installation list is empty. No remote files or Pages site were created. Next step: configure the GitHub connection in ChatGPT and grant its app access to homework-4-5, then retry upload and deployment. User publication consent remains valid; no new consent is needed.
+
+## Repository upload succeeded
+
+After the user updated the GitHub connection, the installation appeared with access to all repositories. `git push student main` succeeded to `https://github.com/e1ova00/homework-4-5`, preserving the original history. Earlier 403 errors above are historical. GitHub warned about several historical Blender backup blobs slightly larger than its recommended 50 MB threshold; upload succeeded and no original objects were removed.
+
+The app now has contents/actions/workflows write permissions, but no Pages or administration permission. Pages source configuration therefore requires the owner to choose GitHub Actions once at https://github.com/e1ova00/homework-4-5/settings/pages. A manual Pages workflow run was started after upload. Its final deployment status will be recorded after verification.
+
+The complete ZIP was also uploaded to Filebin with the user's separate, explicit consent. The server-reported SHA256 matched the local ZIP, and a ranged HTTPS GET returned the ZIP signature PK\x03\x04. That initial temporary download expires on 2026-11-18. A GitHub release asset is being prepared for a persistent download.

@@ -53,6 +53,9 @@ Original touch movement, two-finger camera gestures and gamepad controls are unc
 
 ## Build, hosting and validation
 
+Student repository: https://github.com/e1ova00/homework-4-5
+
+
 `.github/workflows/pages.yml` builds and deploys `dist/` on pushes to `main`. In repository Settings → Pages choose **GitHub Actions** as the source. The upstream Vite configuration already uses `base: './'`, compatible with a repository Pages URL. No custom router or asset substitution is used.
 
 See `QA-REPORT.md` for actual checks, warnings and untested hardware. Baseline and modified production builds succeed. The full production application reached gameplay in mobile emulation; the exact code and close button passed with no recorded page errors or HTTP >=400 responses. Desktop gameplay, full driving and real hardware coverage remain incomplete. There are no configured upstream lint or test scripts; the small added Node tests do not require a testing framework. The original compression script regenerates assets and is not a validation test.
