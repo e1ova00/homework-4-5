@@ -94,3 +94,7 @@ Executed `node /tmp/folio-production-mobile.cjs` with Playwright, Chromium + Swi
 **PASS:** page loads; student modal is hidden initially; repeated Enter during the original intro reaches `input-filter-wandering`; the exact arrow-key/B/A sequence opens the student achievement in the full production application; its close button dismisses it. **Zero pageerror events and zero HTTP responses with status >=400 were recorded.** This run did not visually certify every world object, test driving/physics, audible output or real touch/gamepad hardware. No desktop gameplay pass is claimed.
 
 The manual checklist item for exact-code activation in full gameplay is therefore covered in mobile emulation; driving restoration and full in-game Escape remain manual. Escape was separately verified with the real ClosingManager in the isolated integration test.
+
+## Publication continuation
+
+The user created and supplied `https://github.com/e1ova00/homework-4-5.git`. GitHub reports admin and push permissions for the current connection; the remote is empty. Upload and Pages deployment are now being attempted against this explicitly supplied repository. The earlier repository-creation permission errors remain historical diagnostics, not missing publication consent.
