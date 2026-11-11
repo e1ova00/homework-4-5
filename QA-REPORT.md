@@ -98,3 +98,7 @@ The manual checklist item for exact-code activation in full gameplay is therefor
 ## Publication continuation
 
 The user created and supplied `https://github.com/e1ova00/homework-4-5.git`. GitHub reports admin and push permissions for the current connection; the remote is empty. Upload and Pages deployment are now being attempted against this explicitly supplied repository. The earlier repository-creation permission errors remain historical diagnostics, not missing publication consent.
+
+### Access check for homework-4-5
+
+GitHub metadata reports the account's admin/push permission, but the connected integration cannot exercise repository writes: HTTPS git push returned 403 Permission denied, the connector Contents API returned 403 Resource not accessible by integration, and POST /repos/e1ova00/homework-4-5/pages also returned 403. The accessible installation list is empty. No remote files or Pages site were created. Next step: configure the GitHub connection in ChatGPT and grant its app access to homework-4-5, then retry upload and deployment. User publication consent remains valid; no new consent is needed.
