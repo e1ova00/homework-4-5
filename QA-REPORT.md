@@ -128,3 +128,16 @@ Repository upload is complete. Pages is still blocked by the account-level billi
 ## Prebuilt Pages branch
 
 Following the owner's switch to Deploy from a branch, the already validated production dist was published to a new `gh-pages` branch, with index.html at root, .nojekyll, original license and student notice. No rendering or asset substitutions were made. The `main` branch remains the source repository. The current Pages source was verified as main /; switching it via the API returned 403 because the app lacks Pages write permission. The owner must select gh-pages / (root) and Save in Pages settings. This does not establish that the account billing lock has been resolved; the latest custom workflow still reports that lock.
+
+## Successful independent public deployment
+
+The user authorized an alternative hosting service to obtain a working public URL immediately. Vercel returned no available teams, so the existing production build was published through Sites. Native deployment status returned **succeeded** on 2026-11-11, with public access confirmed.
+
+Live URL: https://nadya-folio-student-2026.considerateant2.chatgpt.site
+Site project: appgprj_6af4415cedc08191abc0fb2116fcc3a5
+Deployment: appgdep_6af4427c645c819197a5f774175f44ad
+Deployment source commit: 2e62d626e653d47fc593b81da2e121752be7734b
+
+Hosted runtime files are byte-for-byte copies of the previously tested production output. Three unused music WAV masters (over 25 MiB each) were omitted only from this hosting copy; source code uses the original MP3s, which are included. All original models, textures, physics WASM, sounds used at runtime, UI, license and student notice are preserved. Full original masters remain in GitHub and the complete ZIP.
+
+Native publication success verifies hosting; no new browser test was performed on Sites because managed browser-control tools were unavailable. Earlier actual production/mobile integration checks apply to the same app build. GitHub Pages is still separate and subject to its account restriction; the live URL above does not depend on GitHub Actions.

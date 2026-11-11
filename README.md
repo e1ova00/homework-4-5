@@ -55,6 +55,10 @@ Original touch movement, two-finger camera gestures and gamepad controls are unc
 
 Student repository: https://github.com/e1ova00/homework-4-5
 
+**Live public site:** https://nadya-folio-student-2026.considerateant2.chatgpt.site
+
+The same production build is published on Sites independently of GitHub Actions. Original MP3 music and all runtime assets are retained; three unused WAV source masters remain in GitHub and the full ZIP rather than the hosting upload.
+
 A ready production build is also published on the `gh-pages` branch, with `index.html` at its root and `.nojekyll`. For branch-based hosting, choose Settings → Pages → Deploy from a branch → `gh-pages` → `/ (root)`. The `main` root contains sources, not the production entry page. GitHub currently reports an account billing lock for Actions; a working Pages deployment has not yet been verified.
 
 
