@@ -64,7 +64,7 @@ MIT root license and Bruno Simon copyright retained unchanged. Upstream package 
 
 ## Hosting and packaging
 
-Pages workflow is prepared. Public publishing requires confirmation because it exposes the student's full name and group. A fork API attempt returned HTTP 403 (integration permissions). Public repository creation was stopped by automatic approval review pending explicit personal-data publication consent. No working GitHub Pages URL is claimed until deployment actually succeeds.
+Pages workflow is prepared. The user explicitly approved public publication of the student name and group. After that consent, repository creation was attempted through both GitHub GraphQL and REST APIs. GitHub rejected GraphQL CreateRepository for insufficient permissions and REST POST /user/repos with HTTP 403 Resource not accessible by integration. The earlier fork attempt also returned 403. Publication is blocked by GitHub integration permissions, not by missing user consent. No repository or working GitHub Pages URL is claimed. Manual next step: create an empty public e1ova00/bruno-simon-student-edition repository in GitHub and grant the connected GitHub application access to it; then upload and Pages setup can be retried.
 
 The ZIP excludes node_modules, .git, local .env, caches, browser profiles and debug logs. It includes source, all original static/resources assets, notices, README, tests, workflow, original lockfile, .env.example and successful dist output. Archive integrity / extraction results are recorded below.
 
